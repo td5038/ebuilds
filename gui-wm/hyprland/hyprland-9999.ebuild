@@ -14,7 +14,7 @@ EGIT_REPO_URI="https://github.com/hyprwm/hyprland.git"
 KEYWORDS=""
 LICENSE="BSD"
 SLOT="0"
-IUSE="X legacy-renderer systemd video_cards_nvidia"
+IUSE="X legacy-renderer systemd"
 
 # bundled wlroots has the following dependency string according to included headers.
 # wlroots[drm,gles2-renderer,libinput,x11-backend?,X?]
@@ -90,16 +90,6 @@ pkg_setup() {
 		eerror "Please upgrade Clang: emerge -v1 sys-devel/clang"
 		die "Clang version is too old to compile Hyprland!"
 	fi
-}
-
-src_prepare() {
-	if use video_cards_nvidia; then
-		cd "${S}/subprojects/wlroots" || die
-		eapply "${S}/nix/patches/wlroots-nvidia.patch"
-		cd "${S}" || die
-	fi
-
-	default
 }
 
 src_configure() {
