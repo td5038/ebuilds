@@ -67,6 +67,7 @@ DEPEND="
 	${WLROOTS_DEPEND}
 	dev-libs/hyprland-protocols
 	>=dev-libs/wayland-protocols-1.25
+        dev-cpp/tomlplusplus
 "
 BDEPEND="
 	${WLROOTS_BDEPEND}
