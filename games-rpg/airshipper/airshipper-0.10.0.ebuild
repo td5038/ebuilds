@@ -579,7 +579,7 @@ BDEPEND=""
 QA_FLAGS_IGNORED="usr/bin/${PN}"
 
 src_compile() {
-	cd ${SRCDIR}/client
+	cd ${WORKDIR}/client
 
 	default
 }
