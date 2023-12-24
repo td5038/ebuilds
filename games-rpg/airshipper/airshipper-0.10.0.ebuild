@@ -7,14 +7,15 @@ EAPI=8
 
 CRATES="
 	Inflector-0.11.4
-	ab_glyph-0.2.21
+	ab_glyph-0.2.23
 	ab_glyph_rasterizer-0.1.8
-	addr2line-0.20.0
+	addr2line-0.21.0
 	adler-1.0.2
 	adler32-1.2.0
-	ahash-0.7.6
-	aho-corasick-1.0.2
+	ahash-0.8.6
+	aho-corasick-1.1.2
 	aliasable-0.1.3
+	allocator-api2-0.2.16
 	android-tzdata-0.1.1
 	android_system_properties-0.1.5
 	approx-0.5.1
@@ -23,36 +24,37 @@ CRATES="
 	ash-0.34.0+1.2.203
 	async-stream-0.3.5
 	async-stream-impl-0.3.5
-	async-trait-0.1.72
+	async-trait-0.1.75
 	atom_syndication-0.9.1
 	atomic-0.5.3
+	atomic-0.6.0
 	atty-0.2.14
 	autocfg-1.1.0
-	backtrace-0.3.68
+	backtrace-0.3.69
 	base64-0.12.3
 	base64-0.13.1
-	base64-0.21.2
+	base64-0.21.5
 	binascii-0.1.4
 	bit-set-0.5.3
 	bit-vec-0.6.3
 	bitflags-1.3.2
-	bitflags-2.3.3
+	bitflags-2.4.1
 	block-0.1.6
-	bstr-1.6.0
-	bumpalo-3.13.0
-	bytemuck-1.13.1
-	bytemuck_derive-1.4.1
-	byteorder-1.4.3
+	bstr-1.8.0
+	bumpalo-3.14.0
+	bytemuck-1.14.0
+	bytemuck_derive-1.5.0
+	byteorder-1.5.0
 	bytes-1.1.0
-	bytesize-1.2.0
+	bytesize-1.3.0
 	bzip2-0.4.4
 	bzip2-sys-0.1.11+1.0.8
 	calloop-0.9.3
-	cc-1.0.82
+	cc-1.0.83
 	cfg-if-0.1.10
 	cfg-if-1.0.0
 	cfg_aliases-0.1.1
-	chrono-0.4.26
+	chrono-0.4.31
 	clap-3.2.25
 	clap_derive-3.2.25
 	clap_lex-0.2.4
@@ -61,28 +63,28 @@ CRATES="
 	clipboard_wayland-0.2.0
 	clipboard_x11-0.4.0
 	cocoa-0.24.1
-	cocoa-foundation-0.1.1
+	cocoa-foundation-0.1.2
 	codespan-reporting-0.11.1
 	color_quant-1.1.0
-	colored-2.0.4
+	colored-2.1.0
 	console-0.15.7
 	convert_case-0.4.0
-	cookie-0.17.0
+	cookie-0.18.0
 	copyless-0.1.5
 	core-foundation-0.7.0
-	core-foundation-0.9.3
+	core-foundation-0.9.4
 	core-foundation-sys-0.7.0
-	core-foundation-sys-0.8.4
+	core-foundation-sys-0.8.6
 	core-graphics-0.19.2
 	core-graphics-0.22.3
-	core-graphics-types-0.1.2
+	core-graphics-types-0.1.3
 	core-video-sys-0.1.4
 	country-parser-0.1.1
 	crc32fast-1.3.2
-	crossbeam-channel-0.5.8
-	crossbeam-deque-0.8.3
-	crossbeam-epoch-0.9.15
-	crossbeam-utils-0.8.16
+	crossbeam-channel-0.5.9
+	crossbeam-deque-0.8.4
+	crossbeam-epoch-0.9.16
+	crossbeam-utils-0.8.17
 	cty-0.2.2
 	d3d12-0.4.1
 	darling-0.10.2
@@ -92,7 +94,7 @@ CRATES="
 	darling_macro-0.10.2
 	darling_macro-0.13.4
 	deflate-0.8.6
-	deranged-0.3.7
+	deranged-0.3.10
 	derive_builder-0.9.0
 	derive_builder_core-0.9.0
 	derive_more-0.99.17
@@ -100,9 +102,9 @@ CRATES="
 	devise_codegen-0.4.1
 	devise_core-0.4.1
 	diesel-1.4.8
-	diesel-2.1.0
+	diesel-2.1.4
 	diesel_derives-1.4.1
-	diesel_derives-2.1.0
+	diesel_derives-2.1.2
 	diesel_migrations-1.4.0
 	diesel_table_macro_syntax-0.1.0
 	diligent-date-parser-0.1.4
@@ -115,70 +117,69 @@ CRATES="
 	downcast-rs-1.2.0
 	either-1.9.0
 	encode_unicode-0.3.6
-	encoding_rs-0.8.32
+	encoding_rs-0.8.33
 	endian-type-0.1.2
 	equivalent-1.0.1
-	errno-0.3.2
-	errno-dragonfly-0.1.2
+	errno-0.3.8
 	error-code-2.3.1
 	euclid-0.22.9
-	fastrand-2.0.0
+	fastrand-2.0.1
 	fd-lock-3.0.13
-	figment-0.10.10
+	figment-0.10.12
 	find_folder-0.3.0
-	flate2-1.0.26
+	flate2-1.0.28
 	fnv-1.0.7
 	foreign-types-0.3.2
 	foreign-types-shared-0.1.1
 	form_urlencoded-1.0.1
 	futf-0.1.5
-	futures-0.3.28
-	futures-channel-0.3.28
-	futures-core-0.3.28
-	futures-executor-0.3.28
-	futures-io-0.3.28
-	futures-macro-0.3.28
-	futures-sink-0.3.28
-	futures-task-0.3.28
-	futures-util-0.3.28
+	futures-0.3.29
+	futures-channel-0.3.29
+	futures-core-0.3.29
+	futures-executor-0.3.29
+	futures-io-0.3.29
+	futures-macro-0.3.29
+	futures-sink-0.3.29
+	futures-task-0.3.29
+	futures-util-0.3.29
 	fxhash-0.2.1
 	generator-0.7.5
 	gethostname-0.2.3
 	getopts-0.2.21
 	getrandom-0.1.16
-	getrandom-0.2.10
+	getrandom-0.2.11
 	gif-0.11.4
-	gimli-0.27.3
+	gimli-0.28.1
 	glam-0.10.2
 	glob-0.3.1
 	glow-0.11.2
-	glyph_brush-0.7.7
+	glyph_brush-0.7.8
 	glyph_brush_draw_cache-0.1.5
 	glyph_brush_layout-0.2.3
 	gpu-alloc-0.5.4
 	gpu-alloc-types-0.2.0
-	gpu-descriptor-0.2.3
-	gpu-descriptor-types-0.1.1
+	gpu-descriptor-0.2.4
+	gpu-descriptor-types-0.1.2
 	guillotiere-0.6.2
-	h2-0.3.20
+	h2-0.3.22
 	hashbrown-0.12.3
-	hashbrown-0.14.0
+	hashbrown-0.14.3
 	heck-0.4.1
 	hermit-abi-0.1.19
-	hermit-abi-0.3.2
+	hermit-abi-0.3.3
 	hex-0.4.3
 	hexf-parse-0.2.1
 	html2text-0.2.1
 	html5ever-0.25.2
-	http-0.2.9
-	http-body-0.4.5
+	http-0.2.11
+	http-body-0.4.6
 	httparse-1.8.0
-	httpdate-1.0.2
-	hyper-0.14.27
-	hyper-rustls-0.24.1
+	httpdate-1.0.3
+	hyper-0.14.28
+	hyper-rustls-0.24.2
 	hyper-tls-0.5.0
 	hyperx-1.4.0
-	iana-time-zone-0.1.57
+	iana-time-zone-0.1.58
 	iana-time-zone-haiku-0.1.2
 	iced-0.4.2
 	iced_core-0.5.0
@@ -194,32 +195,33 @@ CRATES="
 	idna-0.2.3
 	image-0.23.14
 	indexmap-1.9.3
-	indexmap-2.0.0
+	indexmap-2.1.0
 	indicatif-0.15.0
 	indicatif-0.16.2
 	inlinable_string-0.1.15
 	inplace_it-0.3.5
 	instant-0.1.12
-	ipnet-2.8.0
+	ipnet-2.9.0
 	is-terminal-0.4.9
-	itoa-1.0.9
+	itoa-1.0.10
 	jni-sys-0.3.0
 	jpeg-decoder-0.1.22
-	js-sys-0.3.64
+	js-sys-0.3.66
 	jsonwebtoken-7.2.0
 	kamadak-exif-0.5.5
 	khronos-egl-4.1.0
 	language-tags-0.3.2
 	lazy_static-1.4.0
-	libc-0.2.147
+	libc-0.2.151
 	libloading-0.7.4
-	libloading-0.8.0
+	libloading-0.8.1
+	libredox-0.0.1
 	libsqlite3-sys-0.9.1
-	libsqlite3-sys-0.26.0
+	libsqlite3-sys-0.27.0
 	linked-hash-map-0.5.6
-	linux-raw-sys-0.4.5
-	lock_api-0.4.10
-	log-0.4.19
+	linux-raw-sys-0.4.12
+	lock_api-0.4.11
+	log-0.4.20
 	loom-0.5.6
 	mac-0.1.1
 	malloc_buf-0.0.6
@@ -228,7 +230,7 @@ CRATES="
 	matchers-0.1.0
 	matches-0.1.10
 	md5-0.7.0
-	memchr-2.5.0
+	memchr-2.6.4
 	memmap2-0.3.1
 	memmap2-0.5.10
 	memoffset-0.6.5
@@ -237,10 +239,9 @@ CRATES="
 	migrations_internals-1.4.1
 	migrations_macros-1.4.2
 	mime-0.3.17
-	minimal-lexical-0.2.1
 	miniz_oxide-0.3.7
 	miniz_oxide-0.7.1
-	mio-0.8.8
+	mio-0.8.10
 	multer-2.1.0
 	mutate_once-0.1.1
 	naga-0.8.5
@@ -256,13 +257,12 @@ CRATES="
 	nix-0.24.3
 	nix-0.25.1
 	no-std-net-0.6.0
-	nom-7.1.3
 	nu-ansi-term-0.46.0
 	num-bigint-0.2.6
 	num-integer-0.1.45
 	num-iter-0.1.43
 	num-rational-0.3.2
-	num-traits-0.2.16
+	num-traits-0.2.17
 	num_cpus-1.16.0
 	num_enum-0.5.11
 	num_enum_derive-0.5.11
@@ -272,29 +272,29 @@ CRATES="
 	objc-foundation-0.1.1
 	objc_exception-0.1.2
 	objc_id-0.1.1
-	object-0.31.1
-	once_cell-1.18.0
+	object-0.32.2
+	once_cell-1.19.0
 	opener-0.5.2
-	openssl-0.10.56
+	openssl-0.10.62
 	openssl-macros-0.1.1
 	openssl-probe-0.1.5
-	openssl-src-111.27.0+1.1.1v
-	openssl-sys-0.9.91
-	ordered-float-3.7.0
-	os_str_bytes-6.5.1
+	openssl-src-300.2.1+3.2.0
+	openssl-sys-0.9.98
+	ordered-float-4.2.0
+	os_str_bytes-6.6.1
 	ouroboros-0.13.0
 	ouroboros_macro-0.13.0
 	overload-0.1.1
-	owned_ttf_parser-0.19.0
+	owned_ttf_parser-0.20.0
 	parking_lot-0.11.2
 	parking_lot-0.12.1
 	parking_lot_core-0.8.6
-	parking_lot_core-0.9.8
-	pear-0.2.7
-	pear_codegen-0.2.7
+	parking_lot_core-0.9.9
+	pear-0.2.8
+	pear_codegen-0.2.8
 	pem-0.8.3
 	percent-encoding-2.1.0
-	pest-2.7.2
+	pest-2.7.5
 	phf-0.8.0
 	phf_codegen-0.8.0
 	phf_generator-0.8.0
@@ -303,28 +303,29 @@ CRATES="
 	phf_shared-0.10.0
 	pin-project-1.1.3
 	pin-project-internal-1.1.3
-	pin-project-lite-0.2.11
+	pin-project-lite-0.2.13
 	pin-utils-0.1.0
-	pkg-config-0.3.27
+	pkg-config-0.3.28
 	pnet_base-0.31.0
 	pnet_macros-0.31.0
 	pnet_macros_support-0.31.0
 	pnet_packet-0.31.0
 	png-0.16.8
+	powerfmt-0.2.0
 	ppv-lite86-0.2.17
 	precomputed-hash-0.1.1
 	proc-macro-crate-1.3.1
 	proc-macro-error-1.0.4
 	proc-macro-error-attr-1.0.4
-	proc-macro2-1.0.66
+	proc-macro2-1.0.71
 	proc-macro2-diagnostics-0.10.1
-	profiling-1.0.9
+	profiling-1.0.13
 	prometheus-0.12.0
 	protobuf-2.28.0
 	pulldown-cmark-0.7.2
 	pulldown-cmark-0.8.0
 	quick-xml-0.20.0
-	quote-1.0.32
+	quote-1.0.33
 	r2d2-0.8.10
 	radix_trie-0.2.1
 	rand-0.7.3
@@ -338,75 +339,77 @@ CRATES="
 	range-alloc-0.1.3
 	raw-window-handle-0.3.4
 	raw-window-handle-0.4.3
-	rayon-1.7.0
-	rayon-core-1.11.0
+	rayon-1.8.0
+	rayon-core-1.12.0
 	redox_syscall-0.2.16
-	redox_syscall-0.3.5
-	redox_users-0.4.3
-	ref-cast-1.0.19
-	ref-cast-impl-1.0.19
-	regex-1.9.3
+	redox_syscall-0.4.1
+	redox_users-0.4.4
+	ref-cast-1.0.21
+	ref-cast-impl-1.0.21
+	regex-1.10.2
 	regex-automata-0.1.10
-	regex-automata-0.3.6
+	regex-automata-0.4.3
 	regex-syntax-0.6.29
-	regex-syntax-0.7.4
+	regex-syntax-0.8.2
 	renderdoc-sys-0.7.1
-	reqwest-0.11.18
+	reqwest-0.11.23
 	ring-0.16.20
-	rocket-0.5.0-rc.3
-	rocket_codegen-0.5.0-rc.3
-	rocket_http-0.5.0-rc.3
-	rocket_sync_db_pools-0.1.0-rc.3
-	rocket_sync_db_pools_codegen-0.1.0-rc.3
+	ring-0.17.7
+	rocket-0.5.0
+	rocket_codegen-0.5.0
+	rocket_http-0.5.0
+	rocket_sync_db_pools-0.1.0
+	rocket_sync_db_pools_codegen-0.1.0
 	ron-0.6.6
 	ron-0.7.1
 	rss-1.10.0
 	rustc-demangle-0.1.23
 	rustc-hash-1.1.0
 	rustc_version-0.4.0
-	rustix-0.38.7
-	rustls-0.21.6
-	rustls-pemfile-1.0.3
-	rustls-webpki-0.101.3
+	rustix-0.38.28
+	rustls-0.21.10
+	rustls-pemfile-1.0.4
+	rustls-webpki-0.101.7
 	rustversion-1.0.14
 	rustyline-10.1.1
-	ryu-1.0.15
+	ryu-1.0.16
 	schannel-0.1.22
 	scheduled-thread-pool-0.2.7
 	scoped-tls-1.0.1
 	scopeguard-1.2.0
-	sct-0.7.0
+	sct-0.7.1
 	security-framework-2.9.2
 	security-framework-sys-2.9.1
 	self_update-0.27.0
 	semver-0.11.0
-	semver-1.0.18
+	semver-1.0.20
 	semver-parser-0.10.2
-	serde-1.0.183
-	serde_derive-1.0.183
-	serde_json-1.0.104
+	serde-1.0.193
+	serde_derive-1.0.193
+	serde_json-1.0.108
 	serde_path_to_error-0.1.14
-	serde_spanned-0.6.3
+	serde_spanned-0.6.5
 	serde_urlencoded-0.7.1
-	sharded-slab-0.1.4
+	sharded-slab-0.1.7
 	signal-hook-registry-1.4.1
 	simple_asn1-0.4.1
-	siphasher-0.3.10
-	slab-0.4.8
-	slotmap-1.0.6
-	smallvec-1.11.0
+	siphasher-0.3.11
+	slab-0.4.9
+	slotmap-1.0.7
+	smallvec-1.11.2
 	smithay-client-toolkit-0.15.4
-	smithay-client-toolkit-0.16.0
+	smithay-client-toolkit-0.16.1
 	smithay-clipboard-0.6.6
 	snafu-0.7.5
 	snafu-derive-0.7.5
-	socket2-0.4.9
+	socket2-0.4.10
+	socket2-0.5.5
 	spin-0.5.2
 	spin-0.9.8
 	spirv-0.2.0+1.5.4
 	stable-pattern-0.1.0
 	stable_deref_trait-1.2.0
-	state-0.5.3
+	state-0.6.0
 	static_assertions-1.1.0
 	str-buf-1.0.6
 	string_cache-0.8.7
@@ -417,53 +420,58 @@ CRATES="
 	surge-ping-0.7.3
 	svg_fmt-0.4.1
 	syn-1.0.109
-	syn-2.0.28
-	tempfile-3.7.1
+	syn-2.0.42
+	system-configuration-0.5.1
+	system-configuration-sys-0.5.0
+	tempfile-3.8.1
 	tendril-0.4.3
-	termcolor-1.2.0
+	termcolor-1.4.0
 	textwrap-0.16.0
-	thiserror-1.0.44
-	thiserror-impl-1.0.44
+	thiserror-1.0.51
+	thiserror-impl-1.0.51
 	thread_local-1.1.7
 	time-0.1.45
-	time-0.3.25
-	time-core-0.1.1
-	time-macros-0.2.11
+	time-0.3.31
+	time-core-0.1.2
+	time-macros-0.2.16
 	tinyvec-1.6.0
 	tinyvec_macros-0.1.1
-	tokio-1.29.1
-	tokio-macros-2.1.0
+	tokio-1.35.1
+	tokio-macros-2.2.0
 	tokio-native-tls-0.3.1
 	tokio-rustls-0.24.1
 	tokio-stream-0.1.14
 	tokio-util-0.6.10
-	tokio-util-0.7.8
+	tokio-util-0.7.10
 	toml-0.5.11
-	toml-0.7.6
-	toml_datetime-0.6.3
-	toml_edit-0.19.14
+	toml-0.8.8
+	toml_datetime-0.6.5
+	toml_edit-0.19.15
+	toml_edit-0.21.0
 	tower-service-0.3.2
-	tracing-0.1.37
-	tracing-appender-0.2.2
-	tracing-attributes-0.1.26
-	tracing-core-0.1.31
+	tracing-0.1.40
+	tracing-appender-0.2.3
+	tracing-attributes-0.1.27
+	tracing-core-0.1.32
 	tracing-futures-0.2.5
-	tracing-log-0.1.3
-	tracing-subscriber-0.3.17
-	try-lock-0.2.4
-	ttf-parser-0.19.1
+	tracing-log-0.1.4
+	tracing-log-0.2.0
+	tracing-subscriber-0.3.18
+	try-lock-0.2.5
+	ttf-parser-0.20.0
 	twox-hash-1.6.3
-	ubyte-0.10.3
+	ubyte-0.10.4
 	ucd-trie-0.1.6
 	uncased-0.9.9
 	unicase-2.6.0
-	unicode-bidi-0.3.13
-	unicode-ident-1.0.11
+	unicode-bidi-0.3.14
+	unicode-ident-1.0.12
 	unicode-normalization-0.1.22
 	unicode-segmentation-1.10.1
-	unicode-width-0.1.10
+	unicode-width-0.1.11
 	unicode-xid-0.2.4
 	untrusted-0.7.1
+	untrusted-0.9.0
 	url-2.3.0
 	utf-8-0.7.6
 	utf8parse-0.2.1
@@ -475,13 +483,13 @@ CRATES="
 	wasi-0.9.0+wasi-snapshot-preview1
 	wasi-0.10.0+wasi-snapshot-preview1
 	wasi-0.11.0+wasi-snapshot-preview1
-	wasm-bindgen-0.2.87
-	wasm-bindgen-backend-0.2.87
-	wasm-bindgen-futures-0.4.37
-	wasm-bindgen-macro-0.2.87
-	wasm-bindgen-macro-support-0.2.87
-	wasm-bindgen-shared-0.2.87
-	wasm-streams-0.2.3
+	wasm-bindgen-0.2.89
+	wasm-bindgen-backend-0.2.89
+	wasm-bindgen-futures-0.4.39
+	wasm-bindgen-macro-0.2.89
+	wasm-bindgen-macro-support-0.2.89
+	wasm-bindgen-shared-0.2.89
+	wasm-streams-0.3.0
 	wasm-timer-0.2.5
 	wayland-client-0.29.5
 	wayland-commons-0.29.5
@@ -490,8 +498,7 @@ CRATES="
 	wayland-scanner-0.29.5
 	wayland-sys-0.29.5
 	web-sys-0.3.57
-	webpki-0.22.0
-	webpki-roots-0.22.6
+	webpki-roots-0.25.3
 	weezl-0.1.7
 	wgpu-0.12.0
 	wgpu-core-0.12.2
@@ -500,41 +507,52 @@ CRATES="
 	wgpu_glyph-0.16.0
 	winapi-0.3.9
 	winapi-i686-pc-windows-gnu-0.4.0
-	winapi-util-0.1.5
+	winapi-util-0.1.6
 	winapi-wsapoll-0.1.1
 	winapi-x86_64-pc-windows-gnu-0.4.0
 	window_clipboard-0.2.4
 	windows-0.48.0
+	windows-core-0.51.1
 	windows-sys-0.45.0
 	windows-sys-0.48.0
+	windows-sys-0.52.0
 	windows-targets-0.42.2
-	windows-targets-0.48.1
+	windows-targets-0.48.5
+	windows-targets-0.52.0
 	windows_aarch64_gnullvm-0.42.2
-	windows_aarch64_gnullvm-0.48.0
+	windows_aarch64_gnullvm-0.48.5
+	windows_aarch64_gnullvm-0.52.0
 	windows_aarch64_msvc-0.42.2
-	windows_aarch64_msvc-0.48.0
+	windows_aarch64_msvc-0.48.5
+	windows_aarch64_msvc-0.52.0
 	windows_i686_gnu-0.42.2
-	windows_i686_gnu-0.48.0
+	windows_i686_gnu-0.48.5
+	windows_i686_gnu-0.52.0
 	windows_i686_msvc-0.42.2
-	windows_i686_msvc-0.48.0
+	windows_i686_msvc-0.48.5
+	windows_i686_msvc-0.52.0
 	windows_x86_64_gnu-0.42.2
-	windows_x86_64_gnu-0.48.0
+	windows_x86_64_gnu-0.48.5
+	windows_x86_64_gnu-0.52.0
 	windows_x86_64_gnullvm-0.42.2
-	windows_x86_64_gnullvm-0.48.0
+	windows_x86_64_gnullvm-0.48.5
+	windows_x86_64_gnullvm-0.52.0
 	windows_x86_64_msvc-0.42.2
-	windows_x86_64_msvc-0.48.0
+	windows_x86_64_msvc-0.48.5
+	windows_x86_64_msvc-0.52.0
 	winit-0.26.1
-	winnow-0.5.4
-	winreg-0.10.1
+	winnow-0.5.30
+	winreg-0.50.0
 	winres-0.1.12
 	x11-dl-2.21.0
 	x11rb-0.9.0
-	xcursor-0.3.4
+	xcursor-0.3.5
 	xi-unicode-0.3.0
-	xml-rs-0.8.16
+	xml-rs-0.8.19
 	xml5ever-0.16.2
-	yansi-0.5.1
-	yansi-1.0.0-rc
+	yansi-1.0.0-rc.1
+	zerocopy-0.7.32
+	zerocopy-derive-0.7.32
 	zip-0.5.13
 "
 
@@ -544,7 +562,7 @@ DESCRIPTION="Provides automatic updates for the voxel RPG Veloren."
 # Double check the homepage as the cargo_metadata crate
 # does not provide this value so instead repository is used
 HOMEPAGE="https://gitlab.com/veloren/airshipper"
-SRC_URI="$(cargo_crate_uris) https://gitlab.com/veloren/airshipper/-/archive/${PV}/airshipper-v${PV}.tar.gz"
+SRC_URI="$(cargo_crate_uris) https://gitlab.com/veloren/airshipper/-/archive/v0.10.0/${P}.tar.gz"
 
 # License set may be more restrictive as OR is not respected
 # use cargo-license for a more accurate license picture
