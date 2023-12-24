@@ -63,13 +63,9 @@ CRATES="
 inherit cargo
 
 DESCRIPTION="CLI tool to get icons on Linux and other Freedesktop systems"
-# Double check the homepage as the cargo_metadata crate
-# does not provide this value so instead repository is used
 HOMEPAGE="https://git.sr.ht/~zethra/geticons"
 SRC_URI="$(cargo_crate_uris) https://git.sr.ht/~zethra/geticons/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
-# License set may be more restrictive as OR is not respected
-# use cargo-license for a more accurate license picture
 LICENSE="Apache-2.0 Apache-2.0-with-LLVM-exceptions BSD GPL-3+ MIT MPL-2.0 Unicode-DFS-2016 Unlicense"
 SLOT="0"
 KEYWORDS="~amd64"
