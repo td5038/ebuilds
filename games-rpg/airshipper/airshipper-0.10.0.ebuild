@@ -578,6 +578,15 @@ BDEPEND=""
 # update with proper path to binaries this crate installs, omit leading /
 QA_FLAGS_IGNORED="usr/bin/${PN}"
 
+src_compile(){
+	cd ${WORKDIR}/airshipper-0.10-0-001a26853fc68f853bff7bc63049d5f319fff475/client
+
+
+	default
+
+
+}
+
 src_install() {
 	cd ${WORKDIR}/airshipper-v0.10.0-001a26853fc68f853bff7bc63049d5f319fff475/client
 
