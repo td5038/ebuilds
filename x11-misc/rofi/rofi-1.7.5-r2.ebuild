@@ -20,6 +20,7 @@ LICENSE="MIT"
 SLOT="0"
 IUSE="+drun test +windowmode"
 RESTRICT="!test? ( test )"
+S="${WORKDIR}/rofi-1.7.5+wayland2"
 
 BDEPEND="
 	sys-devel/bison
