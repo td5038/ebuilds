@@ -435,9 +435,6 @@ pkg_setup() {
 }
 
 src_prepare() {
-	# in cachyos patches
-	rm "${WORKDIR}/2005_netfilter-xtables-fix-typo.patch" || die
-
 	local PATCHES=(
 		# meh, genpatches have no directory
 		"${WORKDIR}"/*.patch
